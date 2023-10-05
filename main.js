@@ -6,3 +6,14 @@ for (let i = 0; i <= 10; i++) {
     }
 }
 console.log(emptyArray);
+
+function PrintOdd(initialValue, endingValue) {
+    const emptyArray = []
+    for (let i = initialValue; i < endingValue; i++) {
+        if (i % 2 === 1) {
+            emptyArray.push(i)
+        }
+    }
+    return emptyArray;
+}
+console.log(PrintOdd(10, 100));
